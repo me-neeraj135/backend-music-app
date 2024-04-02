@@ -1,0 +1,114 @@
+/** @format */
+
+// user register
+
+.rg-main {
+  // height: 100vh;
+  background-color: #c054bc;
+}
+.register-section {
+  .rg-heading-box {
+    padding: 5rem;
+  }
+}
+.register-box {
+  height: 35rem;
+  width: 22%;
+  order: -1;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  border: 1px solid silver;
+  background-color: blueviolet;
+
+  .m-sound {
+    width: 18%;
+    height: 0.8rem;
+    margin: auto;
+    border-radius: 1rem;
+    background-color: white;
+  }
+  .m-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: auto;
+    box-shadow: 0 0 15px white;
+    border: 1px solid silver;
+    border-radius: 50%;
+  }
+  form {
+    padding-top: 2rem;
+    input {
+      width: 100%;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 5px;
+      border: 1px solid silver;
+    }
+    select {
+      width: 100%;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 1rem 0;
+      padding: 0.8rem;
+      color: gray;
+      border-radius: 5px;
+      border: 1px solid silver;
+
+      option {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// login form
+.lg-main {
+  min-height: 100vh;
+  // height: 100vh;
+  background-color: #306a52;
+}
+.login-box {
+  //   margin-top: 1rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px black;
+  border-radius: 0.5rem;
+  background-color: whitesmoke;
+  form {
+    label {
+      font-weight: 600;
+      //   color: whitesmoke;
+      text-transform: capitalize;
+    }
+    input {
+      width: 100%;
+      //   font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      padding: 0.8rem;
+      border-radius: 0.5rem;
+      border: 1px solid silver;
+      background-color: white;
+    }
+    select {
+      width: 100%;
+      //   font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      padding: 0.8rem;
+      color: gray;
+      border-radius: 0.5rem;
+      border: 1px solid silver;
+      background-color: white;
+
+      option {
+        // font-size: 1.1rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// add collection

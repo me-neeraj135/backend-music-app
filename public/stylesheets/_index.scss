@@ -1,0 +1,89 @@
+/** @format */
+
+// common styling
+.primary-heading {
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+}
+
+.secondary-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+}
+
+.tertiary-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+}
+.text-center {
+  text-align: center;
+}
+.pad-tb {
+  padding: 1rem 0;
+}
+.color-wh {
+  color: white;
+}
+
+.hero-main {
+  background-color: #c054bc;
+  height: 100vh;
+}
+
+.info {
+  font-size: 1rem;
+  font-weight: 600;
+  // color: white;
+}
+
+// page styling
+.mobile-banner-box {
+  background-color: #c054bc;
+  padding: 5rem;
+  figure {
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    z-index: 99;
+    .mobile-sound {
+      width: 3rem;
+      height: 0.5rem;
+      border-radius: 1rem;
+      margin: auto;
+      margin-bottom: 1rem;
+      background-color: black;
+    }
+  }
+  .heading-box {
+    padding-top: 6rem;
+    z-index: 99;
+  }
+}
+.circle {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  background-color: #894fd5e5;
+}
+.cr1 {
+  position: absolute;
+  right: 0;
+}
+.cr2 {
+  position: absolute;
+  top: 30rem;
+  left: 30rem;
+  background-color: #894fd5f1;
+}
+.cr3 {
+  width: 35rem;
+  height: 35rem;
+  position: absolute;
+  top: 15rem;
+  right: 0;
+  left: 4rem;
+  background-color: #894fd5;
+}

@@ -1,0 +1,115 @@
+/** @format */
+
+// partial
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 999;
+
+  nav {
+    ul {
+      // border: 1px solid;
+      li {
+        margin-left: 0.5rem;
+        a {
+          &:hover {
+            color: greenyellow;
+          }
+        }
+      }
+    }
+  }
+
+  a {
+    text-transform: capitalize;
+    font-weight: 700;
+    color: whitesmoke;
+  }
+}
+.logo {
+  font-size: 1.3rem;
+  font-weight: 900;
+  text-transform: capitalize;
+  color: whitesmoke;
+}
+
+.profile {
+  width: 12rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: whitesmoke;
+  background-color: #4d4b4b;
+
+  span {
+    color: whitesmoke;
+  }
+
+  figure {
+    width: 7%;
+    height: 0.7rem;
+  }
+}
+
+.drop-down {
+  width: 120%;
+  top: 2.5rem;
+  right: 0;
+  padding: 5px;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #282828;
+  z-index: 99;
+
+  li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    &:hover {
+      background-color: #4d4b4b;
+    }
+  }
+}
+
+.upgrade {
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid silver;
+  background-color: #4d4b4b;
+
+  color: whitesmoke;
+  &:hover {
+    border: 1px solid white;
+    background-color: black;
+  }
+}
+
+// main
+
+main {
+  padding-top: 4rem;
+}
+.dpl-n {
+  display: none;
+}
+.dpBlock {
+  display: block;
+}
+
+.rotate {
+  transform: rotateX(180deg);
+}

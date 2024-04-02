@@ -1,0 +1,22 @@
+<!-- @format -->
+
+<%- include("partial/header")%>
+
+<main class="lg-main">
+  <section class="flex justify-center pad-tb">
+    <div class="login-box flex-40">
+      <h3 class="tertiary-heading pad-tb">Login here</h3>
+      <%if(info){%>
+      <h3 class="info"><%= info %></h3>
+
+      <%}%>
+      <form action="/users/login" method="post">
+        <input type="email" name="email" placeholder="Email" />
+        <input type="password" name="password" placeholder="Password" />
+        <button class="btn btn-primary" type="submit">Login</button>
+      </form>
+    </div>
+  </section>
+</main>
+<%- include("partial/footer")%>
+

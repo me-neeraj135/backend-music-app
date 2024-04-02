@@ -1,0 +1,40 @@
+<!-- @format -->
+
+<%- include("partial/header")%>
+
+<main class="rg-main">
+  <section class="register-section flex justify-center border pad-tb">
+    <div class="rg-heading-box flex-50">
+      <%if(info){%>
+      <h3 class="info">Error: <%= info %></h3>
+
+      <%}%>
+
+      <h1 class="secondary-heading color-wh">
+        Register here to listen <br />
+        your favorite 🎧
+      </h1>
+    </div>
+
+    <div class="register-box">
+      <div class="m-sound"></div>
+
+      <form action="/users/register" method="post">
+        <input type="text" name="name" placeholder="Name" />
+        <input type="text" name="email" placeholder="Email" />
+        <input type="password" name="password" placeholder="Password" />
+        <select name="plan" id="plan">
+          <option value="none" hidden selected>Users Plan</option>
+          <option value="free">Free</option>
+          <option value="vip">Vip</option>
+          <option value="premium">Premium</option>
+        </select>
+        <input type="submit" />
+      </form>
+      <div class="m-btn"></div>
+    </div>
+  </section>
+</main>
+
+<%- include("partial/footer")%>
+

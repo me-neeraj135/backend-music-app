@@ -1,0 +1,61 @@
+<!-- @format -->
+
+<%- include("partial/header")%>
+
+
+<main class="lg-main">
+  <h3 class="tertiary-heading text-center pad-tb">edit collection</h3>
+  <section class="flex justify-center pad-tb">
+    <div class="login-box flex-40">
+      <form
+        action="/collections/<%=item.id %>/edit"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <label for="title">Title</label>
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="Title"
+          value="<%= item.title %>"
+        />
+
+        <label for="author">Author</label>
+        <input
+          type="text"
+          name="author"
+          id="author"
+          placeholder="Author"
+          value="<%= item.author %>"
+        />
+
+        <label for="des">Description</label>
+        <input
+          type="text"
+          name="description"
+          id="des"
+          placeholder="Description"
+          value="<%= item.description %>"
+        />
+
+        <label for="plan">Category</label>
+        <select name="plan" id="plan">
+          <option value="none" selected hidden disabled>available for</option>
+          <option value="free">Free</option>
+          <option value="vip">Vip</option>
+          <option value="premium">Premium</option>
+        </select>
+        <label for="audio">Audio file</label>
+        <input type="file" id="audio" name="audio" accept="" />
+
+        <label for="img">cover image</label>
+        <input type="file" id="img" name="avatar" />
+        <input type="submit" value="update" />
+      </form>
+    </div>
+  </section>
+</main>
+
+<%- include("partial/footer")%>
+

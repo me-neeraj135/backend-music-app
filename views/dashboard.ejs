@@ -1,0 +1,79 @@
+<!-- @format -->
+
+<%- include("partial/header")%>
+
+<aside class="justify-center">
+  <div class="as-logo text-center">
+    <a href="/">my podcast</a>
+  </div>
+  <ul class="as-feature-box flex flex-direction-column">
+    <li>
+      <a href="">🔽 create playlist</a>
+    </li>
+    <li>
+      <a href="">💟 like songs</a>
+    </li>
+    <li>
+      <a href="">🔂 your episod</a>
+    </li>
+  </ul>
+</aside>
+<main class="db-main">
+  <div class="h-div">
+    <% if(collection.length>0){%>
+    <h1 class="primary-heading">Happy mix</h1>
+
+    <%}else{%>
+    <h1 class="primary-heading">no collection</h1>
+    <%}%>
+  </div>
+  <%if(collection.length>0){%>
+
+  <ul class="container">
+    <% collection.forEach(elm=>{%>
+    <li class="flex">
+      <figure>
+        <img
+          class="full-width b-radius"
+          src="/media/<%= elm.avatar%>"
+          alt="aud-avatar"
+        />
+      </figure>
+      <div class="aud-div flex-60">
+        <p>
+          <span> <%=elm.title%> </span> <br />
+          <span> <%=elm.author%> </span><br />
+          <span> <%=elm.description %> </span>
+        </p>
+        <audio controls>
+          <source src="/media/<%= elm.audio %>" type="audio/ogg" />
+          <source src="/media/<%= elm.audio %>" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <p><%=elm.plan%></p>
+      </div>
+      <%if(user){%> <%if(user.isAdmin){%>
+      <div>
+        <button class="btn btn-primary">
+          <a class="color-wh" href="/collections/<%=elm.id %>/edit">edit</a>
+        </button>
+
+        <button class="btn btn-primary">
+          <a class="color-wh" href="/collections/<%=elm.id %>/delete">delete</a>
+        </button>
+      </div>
+      <%}%> <%}%>
+
+      <span class="like">
+        <a class="color-wh" href="/collections/<%= elm.id %>/like"
+          >💜:<%= elm.likes.length %></a
+        >
+      </span>
+    </li>
+
+    <%})%>
+  </ul>
+  <%}%>
+</main>
+<%- include("partial/footer")%>
+
