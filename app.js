@@ -59,7 +59,7 @@ app.use(
     secret: process.env.SECRET,
     resave: false,
     saveUninitialized: false,
-    store: mongoStore.create({ mongoUrl: `mongodb://localhost/my-podcast` }),
+    store: mongoStore.create({ mongoUrl: DB }),
   })
 );
 // add flash
