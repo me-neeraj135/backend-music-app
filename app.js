@@ -18,16 +18,17 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var collectionRouter = require(`./routes/collections`);
 const { userInfo } = require("./middlewares/auth");
+const DB = process.env.DB;
 
 // connect database
 
 mongoose.connect(
-  `mongodb://localhost/my-podcast`,
+  DB,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   },
-  err => {
+  (err) => {
     console.log(err ? err : `database connected`);
   }
 );
